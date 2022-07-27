@@ -1,0 +1,215 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 60px 100px;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* navbar */
+
+.navbar-container,
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.list {
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.list-item {
+  font-size: 20px;
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.list-item::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  right: 15%;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  margin: auto;
+  display: none;
+  background: #000;
+}
+
+.list-item:hover {
+  font-weight: bold;
+}
+.list-item:hover::before {
+  display: block;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button-group svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.button-group button {
+  width: 150px;
+  height: 35px;
+  font-size: 18px;
+  border: 2px solid #000;
+  color: grey;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* navbar end */
+
+[aria-label="banner"] {
+  position: relative;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.square,
+.star,
+.globe {
+  width: fit-content;
+  height: fit-content;
+}
+
+[alt="person-hero-iamge"] {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top: 100px;
+  left: 0;
+}
+
+[alt="square-pattern"] {
+  position: absolute;
+  width: 350px;
+  top: 310px;
+  height: 350px;
+  left: 10%;
+}
+
+[alt="start-pattern"] {
+  position: absolute;
+  width: fit-content;
+  top: 100px;
+  height: fit-content;
+  left: 94%;
+  width: 60px;
+  height: 60px;
+  right: 0;
+}
+
+[alt="globe-pattern"] {
+  position: absolute;
+  width: fit-content;
+  top: 57px;
+  height: fit-content;
+  left: 53%;
+  width: 60px;
+  height: 60px;
+  right: 0;
+}
+
+.hero-container-right {
+  width: 61%;
+  top: 180px;
+  left: 32%;
+  margin-left: 6%;
+  position: absolute;
+  text-align: center;
+}
+.hero-container-right::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("./assets/start.png") no-repeat center center/cover;
+  top: 85%;
+  left: 10%;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.hero-description {
+  max-width: 72%;
+  margin: auto;
+  margin-top: 50px;
+  color: #585858;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-container-right > div:nth-child(3) {
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.hero-container-right > div:nth-child(3) button:first-child,
+.hero-container-right > div:nth-child(3) button:last-child {
+  font-family: "Orbitron", sans-serif;
+  padding: 4px 20px;
+  border-radius: 10px;
+  color: #888888;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 2px solid #000;
+  font-size: 17px;
+}
+
+.hero-container-right > div:nth-child(3) button:last-child {
+  padding: 5px 4px;
+  margin-left: 15px;
+  color: #fff;
+  background: #000;
+}
+
+.hero-container-right > div:nth-child(4) {
+  margin-top: 15%;
+}
+
+.contact-heading {
+  color: #888888;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
